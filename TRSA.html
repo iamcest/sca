@@ -1,0 +1,50 @@
+<!DOCTYPE html><head>
+<title>TIMI Risk Score Ampliado</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 	<link rel="stylesheet" href="cache/jquery.mobile-1.2.0.min.css"/>
+	<script type="text/javascript" src="cache/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="cache/jquery.mobile-1.2.0.min.js"></script>
+     <style type="text/css">#center{ text-align: center;} 
+
+</style>
+</head>
+        
+
+   <div data-role="dialog" id="TRSA" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="b"> 
+				<div id="center">TIMI Risk Score<br>Ampliado</div>
+		</div>          
+           
+       <div data-role="content">
+           <li class="ui-body ui-body-d">
+             <ol data-role="listview"  data-inset="false">
+    <li><a href="Killip.html" data-ajax="false">Killip al ingreso &#8805;2</a> </li>
+  <li><a href="TRS.html" rel="external">Puntuación de TIMI &#8805;4</a></li>
+  <li><a href="#ECG" data-rel="popup">ECG de alto riesgo</a></li>
+ <li> Diabetes</li>
+ <li> Tn elevadas</li><div data-role="list-divider" data-theme="b" align="center">Deben ingresar en la UCI los pacientes diagnosticados de SCA que presenten alguna de las características de la escala de riesgo ‘‘TIMI ampliado’’</div><br>
+</ol></li></div>
+      
+       <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Cerrar</a>
+       
+       
+       <div data-role="popup" id="ECG" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+               
+        <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+       
+       <div data-role="content"  class="ui-corner-bottom ui-content">
+       
+ &nbsp;&nbsp;&nbsp;&#9642; Descenso del segmento ST &#8805;2 mm en 2 deriv.
+ 	 <br> &nbsp;&nbsp;&nbsp;&#9642; Descenso generalizado del ST con elevación de ST en AVR (indicativa de lesión en el tronco)
+ 	 <br> &nbsp;&nbsp;&nbsp;&#9642; Elevación transitoria del segmento ST
+ 	 <br> &nbsp;&nbsp;&nbsp;&#9642; Bloqueo AV de alto grado
+ 	 <br> &nbsp;&nbsp;&nbsp;&#9642; Fibrilación ventricular primaria<br><br>
+       <a href="#" data-rel="back" data-role="button" data-corners="false"   data-mini="true" data-theme="b" data-icon="delete" >Cerrar</a>
+       </div></div></div>     
+
+
+
+</body>
+
+</html>

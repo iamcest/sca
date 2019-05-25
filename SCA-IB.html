@@ -1,0 +1,106 @@
+<!DOCTYPE html><head>
+<title>SCA: protocolo antiagregación AHA 2016</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="cache/jquery.mobile-1.2.0.min.css"/>
+<script src="cache/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="cache/jquery.mobile-1.2.0.min.js"></script>
+<style type="text/css">#center{ text-align: center;}</style>
+</head>
+<div data-role="page" id="IMAbaleares" >
+<div data-role="header" data-theme="c"> <a href="https://www.iamcest.com" rel="external" data-role="button" data-theme="c" data-icon="logo" data-iconpos="notext" class="ui-btn-right">Ir a la web</a><a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="back" data-iconpos="notext" class="ui-btn-left">Volver</a>
+<div id="center">Algoritmo de antiagregación<br>- AHA 2016</div>
+</div>
+<div data-role="content" data-theme="b">
+<div align="center"><table table border="0" width="300"><tr><td>
+<button data-corners="false" data-theme="d">Aspirina</button>
+<div id="center"><input type="button" data-icon="plus" data-mini="true" data-inline="true" data-iconpos="notext" data-theme="c"/></div></td></tr>
+<tr><td><div data-role="collapsible-set" data-inset="false">
+<div data-role="collapsible" data-inset="false">
+<h1>SCASEST</h1>
+<ul data-role="listview"data-theme="d" >
+<li><a href="#MAR" data-rel="popup" >Riesgo Muy Alto</a></li>
+<li><a href="RA.html" data-ajax="false">Riesgo Alto</a></li>
+<li><a href="RIB.html" data-ajax="false">Riesgo bajo/intermedio</a></li></ul></div>
+<div data-role="collapsible" >
+<h1>IAMCEST</h1>
+   <ul data-role="listview" data-theme="d">
+   <li><a href="CCG.html" data-ajax="false" >SI CCG</a></li>
+   <li><a href="#CCGNo" data-rel="popup">NO CCG</a></li>
+   <li><a href="#KIV" data-rel="popup">Killip IV <br>¿complicación mecánica?</a></li>
+   <li><a href="#CCGNo" data-rel="popup">NO reperfusión</a></li></ul>
+
+</td></tr></table><hr>
+<i>Protocolo de antiagregacion en los SCA</i>
+<div data-role="popup" id="NO2" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div id="center">
+<li class="ui-body ui-body-e" > No ictus previo, > 60 Kg y &#8804; 75 años, preferiblemente diabéticos <br><strong>Prasugrel</strong></li><br>
+<li class="ui-body ui-body-e" >Ictus previo, en cualquier edad y peso, aclaramiento creatinina < 60 ml/min . Evitar en bloqueo AV avanzado o bradicardia extrema<br><strong>Ticagrelor</strong></li>
+<a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a></div>
+<div data-role="popup" id="SI2" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div id="center"> <li class="ui-body ui-body-c" ><strong>IAM extenso </strong><br> Alto riesgo hemorrágico </li>
+<li class="ui-body ui-body-e" > Clopidogrel<br>+<br> AAS</li>
+<a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a>
+</div></div>
+<div data-role="popup" id="CCGNo" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<li class="ui-body ui-body-c" >- Trombolisis<br>- No posibilidad de CCG<br>- No indicado reperfusión</li>
+    <div id="center"> <br><li class="ui-body ui-body-e" >Clopidogrel<br>+<br> AAS</li>
+    <a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a>
+</div></div>
+<div data-role="popup" id="KIV" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+   <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+   <div id="center">   <li class="ui-body ui-body-c" >
+    Killip IV / Sospecha de complicación mecánica</li>
+     <input type="button" data-icon="arrow-d" data-mini="true" data-inline="true" data-iconpos="notext" data-theme="b"/>
+     
+     <li class="ui-body ui-body-e" >
+   <strong> Confirmar realización de coronariografia</strong><br>
+                           
+         <a href="#NO2" data-rel="popup" data-role="button" data-inline="true" data-theme="b" data-position-to="window"><strong>SI</strong></a>
+         <a href="#CCGNo" data-rel="popup" data-role="button" data-inline="true" data-position-to="window"><strong>NO</strong></a></li>
+  </div> </div>  
+  
+  <div data-role="popup" id="riesgo" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div id="center">
+    <li class="ui-body ui-body-e" ><strong>Factores de riesgo<br></strong>Edad >80 años; ictus previo;  HTA severa; antecedentes hemorrágicos; Anemia severa; VKA; vasculopatía periférica; acceso femoral; neoplasia activa; IRC severa; IQ reciente o ineludible
+</li>
+     <a href="CRUSADE.html" rel="external" data-role="button" data-corners="false" data-theme="c" data-icon="calc"  >Calcular CRUSADE</a><br>
+    <a href="#SI" data-rel="popup" data-role="button" data-inline="true"  data-theme="a" data-icon="back" data-position-to="window" >Cerrar</a></div>
+</div></div>
+
+
+
+<!--ANGINA INESTABLE SCASEST -->
+<div data-role="popup" id="MAR" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div id="center"> <li class="ui-body ui-body-c" >Muy alto riesgo</li>
+<li class="ui-body ui-body-d" ><strong>Angina refractaria</strong> asociada a: <br>&#8595;ST en &#8805; 6 derivaciones y/o EAP y/o Shock y/o arritmias ventriculares malignas.</li>
+
+<input type="button" data-icon="arrow-d" data-mini="true" data-inline="true" data-iconpos="notext" data-theme="b"/>
+    <li class="ui-body ui-body-e" ><strong>Aspirina<br>Traslado a hemodinámica</strong><br> ¡¡ NO dar Clopidogrel !!</li>
+    <input type="button" data-icon="arrow-d" data-mini="true" data-inline="true" data-iconpos="notext" data-theme="b"/>
+    <a href="#postK" data-rel="popup" data-role="button" data-corners="false" data-theme="b" data-icon="arrow-r" data-position-to="window" >Manejo poscateterismo</a>
+    <a href="" data-rel="back" data-role="button" data-inline="true" data-theme="a" data-icon="delete" >Cerrar</a>
+</div></div>
+<div data-role="popup" id="postK" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div id="center"> <li class="ui-body ui-body-c" >Post-Cateterismo</li>
+<br>Valorar tratamiento en las siguintes condiciones:
+    <li class="ui-body ui-body-e" >Pacientes con AIT<br><strong>Clopidogrel</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >Dibéticos, trombosis stent<strong><br>Prasugrel</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >ClCr< 60 mL/min, cualquier peso y edad, ictus previo, trombosis stent<br><strong>Ticagrelor</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >A la espera de cirugía coronaria<br><strong>Aspirina</strong></li>
+<br>
+<a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a>
+</div></div>
+</div></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128271616-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128271616-7');
+</script>
+
+</body>
+</html>

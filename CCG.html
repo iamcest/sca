@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html><head>
+<title>IAMCEST</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="cache/jquery.mobile-1.2.0.min.css"/>
+<script src="cache/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="cache/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<div data-role="dialog" id="CCG" data-theme="d" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div data-role="header" data-theme="c">
+<h1>IAM Anterior extenso?</h1></div>
+<div align="center">
+<li class="ui-body ui-body-e" >
+<strong>ECG:</strong> IAM anterior con imágen especular de descenso de ST inferior o IAM inferior con hipotensión  <br>
+<a href="#SI" data-rel="popup" data-role="button" data-inline="true" data-theme="b" data-position-to="window"><strong>SI</strong></a>
+<a href="#NO" data-rel="popup" data-role="button" data-inline="true" data-position-to="window"><strong>NO</strong></a></li><br><a href="#" data-rel="back" data-inline="true"data-role="button" data-theme="d" data-icon="back"  >Volver</a></div>
+    <div data-role="popup" id="NO" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+         <div align="center"><li class="ui-body ui-body-c" >IMA No extenso</li>
+       <li class="ui-body ui-body-e" ><strong> Clopidogrel<br> +<br> AAS</strong></li></div></div>
+       <div data-role="popup" id="SI" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+      <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+                     <div align="center"> <li class="ui-body ui-body-c" >IAM extenso</li>
+                   <input type="button" data-icon="arrow-d" data-mini="true" data-inline="true" data-iconpos="notext" data-theme="b"/>
+                    <li class="ui-body ui-body-e" >
+                        <strong> ¿Riesgo hemorrágico?<br> Factores:</strong>Edad >80 años; ictus previo;  HTA severa; antecedentes hemorrágicos; Anemia severa; VKA; vasculopatía periférica; acceso femoral; neoplasia activa; IRC severa; IQ reciente o ineludible  <a href="CRUSADE.html" data-ajax="false" data-role="button" data-corners="false" data-theme="c" data-icon="calc">Calcular CRUSADE</a>
+   <a href="#SI2" data-rel="popup" data-role="button" data-inline="true" data-theme="b" data-position-to="window"><strong>ALTO</strong></a>
+   <a href="#NO2" data-rel="popup" data-role="button" data-inline="true" data-position-to="window"><strong>NO ALTO</strong></a><br></li>
+</div>
+   
+</div>
+
+
+
+
+<div data-role="popup" id="NO2" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+ <div align="center"><li class="ui-body ui-body-c" >IAM extenso<br> 
+ <strong>NO ALTO</strong>  riesgo hemorrágico</li><br>
+<li class="ui-body ui-body-e" > No ictus previo, > 60 Kg y &#8804; 75 años, preferiblemente diabéticos <br><strong>Prasugrel</strong></li>
+   <li class="ui-body ui-body-e" >Ictus previo, en cualquier edad y peso, aclaramiento creatinina < 60 ml/min . Evitar en bloqueo AV avanzado o bradicardia extrema<br><strong>Ticagrelor</strong></li>	
+
+
+    <a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a></div>
+
+    
+<div data-role="popup" id="SI2" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div align="center"> <li class="ui-body ui-body-c" >IAM extenso<br> Alto riesgo hemorrágico</li>
+    <li class="ui-body ui-body-e" > Clopidogrel<br>+<br> AAS</li>
+    <a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a>
+</div></div>
+
+    <!--postcatetetetrismmo -->
+    <div data-role="popup" id="postK" data-theme="b" class="ui-content" data-overlay-theme="a" style="max-width:100%">
+<div align="center"> <li class="ui-body ui-body-a" ><strong>Post-Cateterismo</strong></li>
+<br>Valorar tratamiento en las siguintes condiciones:
+
+    <li class="ui-body ui-body-e" >Pacientes con AIT<br><strong>Clopidogrel</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >Dibéticos, trombosis stent<strong><br>Prasugrel</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >ClCr< 60 mL/min, cualquier peso y edad, ictus previo, trombosis stent<br><strong>Ticagrelor</strong> + AAS</li>
+    <li class="ui-body ui-body-e" >A la espera de cirugía coronaria<br><strong>Aspirina</strong></li>
+<br>
+    <a href="" data-rel="back" data-role="button"  data-inline="true" data-theme="a" data-icon="delete"  >Cerrar</a>
+</div></div>
+    
+</div></div>
+   
+   
+   
+</div>
+
+

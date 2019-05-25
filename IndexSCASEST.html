@@ -1,0 +1,61 @@
+<!DOCTYPE html><head>
+<title>SCASEST</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="cache/jquery.mobile-1.2.0.min.css"/>
+<script type="text/javascript" src="cache/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="cache/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="SCASEST1" data-theme="c" >
+<div data-role="header"  data-theme="c" >
+<h1>SCASEST</h1></div>
+<div data-role="content">
+<ul data-role="listview" data-theme="d" data-inset="true"><li><a href="riesgoSCASEST.html" data-ajax="false">Estratificación Riesgo</a></li><li><a href="SCASEST-estrategia.html" data-ajax="false">Manejo inicial</a></li><li><a href="TTSEST.html" rel="external">Tto. invasivo/conservador</a></li><li><a href="#Medico2" data-rel="popup" data-position-to="window">Tto.médico adjunto</a></li><li><a href="#cate" data-rel="popup">Indicación cateterismo </a></li><li><a href="SCASESTpostcate.htm" data-ajax="false">Manejo Postcateterismo</a></li><li><a href="SCASESTgrupos.htm" rel="external">Poblaciones especiales</a></li></ul></div>
+<div align="center">
+<a href="index.html" data-ajax="false" data-role="button"  data-inline="true" data-icon="home" >Volver al Inicio SCA</a></p></div>
+<div data-role="popup" id="cate" data-theme="d" data-overlay-theme="a" style="max-width:100%"><div data-role="header"><div align="center">Indicación <br> Angiografía</div></div><a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a><div data-role="content" data-theme="d" class="ui-corner-bottom ui-content"><li class="ui-body ui-body-d"><strong>Precoz en < 2 h </strong>si riesgo isquémico muy alto <a href="IC.html" data-ajax="false">(IC)</a><br>
+&#9642; Angina refractaria (indicio de un IAM en curso sin anomalías ST).
+<br>&#9642; Angina recurrente a pesar de tratamiento antianginoso intenso, asociada a depresión del segmento ST (2 mm) u ondas T negativas profundas.<br>&#9642; Síntomas clínicos de insuficiencia cardiaca o shock cardiogénico.
+<br>&#9642; Arritmias que ponen en riesgo la vida (FV o TV) </li><li class="ui-body ui-body-d"><strong>Precoz en < 24 h</strong>: si una de las siguientes <a href="IA.html" data-ajax="false">(IA)</a><br>
+ &#9642; <a href="https://www.outcomes-umassmed.org/grace/acs_risk/acs_risk_content.html" rel="external">GRACE</a> > 140
+ <br>&#9642; Aumento o disminución relevante de las troponinas 
+ <br>&#9642; Cambios dinámicos en el segmento ST u onda T (sintomáticos o silentes) 
+ <br>&#9642; Angina reposo o de minimo esfuerzo a pesar de tto intensivo
+ <li class="ui-body ui-body-d"><strong>En las primeras 72 h</strong> si una de las siguientes o síntomas recurrentes<a href="IA.html" data-ajax="false">(IA)</a><br>&#9642; Aparición o empeoramiento de regurgitación mitral
+   <br>&#9642; Alto riesgo en pruebas no invasivas
+   <br>&#9642; <a href="https://www.outcomes-umassmed.org/grace/acs_risk/acs_risk_content.html" rel="external">GRACE</a> riesgo Alto / moderado
+ <br>&#9642; <a href="TRS.html" rel="external">TIMI </a>Alto riesgo
+ <br>&#9642; ATC (Angioplastía) últimos 6 meses
+ <br>&#9642; CABG (CRM) previa
+ <br>&#9642; Disfunción renal si <a href="https://www.iamcest.com/ppc/calculadoras/ClCr.htm" rel="external">clcr <60 mL/min/1.73 m²</a><br>&#9642; Diabetes mellitus
+ <br>&#9642; FEVI < 40% </div>
+<div data-role="popup" id="Medico2" data-theme="d" data-overlay-theme="a" style="min-width:100%"><div data-role="header"><div align="center">Tratamiento<br> médico adjunto</div></div><a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><div data-role="content" data-theme="d" class="ui-corner-bottom ui-content"><div data-role="collapsible-set" data-collapsed="true" data-content-theme="b" ><div data-role="collapsible"><h3>Nitratos</h3>
+<strong>VO(sl)</strong> para aliviar la angina <a href="IC.html" data-ajax="false">(IC)</a>;<strong> IV.</strong> en angina persitente, HTA y/o signos de insuf. cardiaca <a href="IB.html" data-ajax="false">(IB)</a>;<strong> Contraindicados</strong> si reciente uso de inh.fosfodiesterasa (p.e.Viagra&reg;)</div>
+<div data-role="collapsible"><h3>&#946;-bloqueantes</h3>
+VO*. En todos los pacientes si no está contraindicado <a href="IA.html" data-ajax="false">(IA)</a><br>
+Si tto crónico continuar si Killip < III <a href="IC.html" data-ajax="false">(IC)</a><br><strong>Largo plazo</strong> en todos los pacientes con FE &#8804; 40% <a href="IA.html" data-ajax="false">(IA)</a><br>Carvedilol, bisoprolol o Metoprolol?</div>
+<div data-role="collapsible"><h3>Calcioantagonistas</h3>
+Verapamil o diltiazen en angina recurrente, si &#946;-bloqueantes contraindicados<a href="IB.html" data-ajax="false">(IB)</a>,o si ya reciben nitratos y &#946;-bloqueantes, <a href="IC.html" data-ajax="false">(IC)</a>
+En Angina vasoespastica <a href="IC.html" data-ajax="false">(IC)</a><br>
+Nifedipino u otras dihidropiridinas no están recomendadas, excepto si se combinan con &#946;-bloqueantes <a href="IIIB.html" data-ajax="false">(IIIB)</a></div><div data-role="collapsible"><h3>IECAS / ARA II / ESPIRO</h3>
+En pacientes con disfunción ventricular izquierda con o sin signos de insuficiencia cardiaca <a href="IA.html" data-ajax="false">(IA)</a><br><strong>Largo plazo</strong><br>&#9642;IECA están recomendados en las primeras 24 h para todos los pacientes con FE &#8804; 40% y en pacientes con insuficiencia cardiaca, diabetes, hipertensión o enfermedad renal crónica, excepto si están contraindicados <a href="IA.html" data-ajax="false">(IA)</a> y en todos los demás pacientes para prevenir la recurrencia de episodios isquémicos <a href="IB.html" data-ajax="false">(IB)</a><br>&#9642;ARA II en pacientes
+intolerantes a los IECA <a href="IA.html" data-ajax="false">(IA)</a><br>&#9642;Bloqueantes-Aldosterona  en estos pacientes si FE<40% junto a IECAS y &#946;-bloqueantes<a href="IA.html" data-ajax="false">(IA)</a></div><div data-role="collapsible"><h3>Estatinas</h3>
+Iniciar o continuar con dosis altas (objetivo de alcanzar una concentración diana de cLDL < 1,8 mmol/l (< 70 mg/dl))<a href="IA.html" data-ajax="false">(IA)</a></div>
+<div data-role="collapsible"><h3>Oxígeno</h3>
+Solo si SpaO2 <90 % o alto riesgo de hipoxemia <a href="IC.html" data-ajax="false">(IC)</a></div>
+<div data-role="collapsible"><h3>Analgésicos</h3>
+Morfina IV. si persiste dolor a pesar de anti-isqémicos <a href="IIbB.html" data-ajax="false">(IIbB)</a><br>AINES contraindicados<a href="IIIB.html" data-ajax="false">(IIIB)</a></div></div>
+<p align="center"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a></p></ul></div></div>
+</div></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128271616-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128271616-5');
+</script>
+
+</body></html>

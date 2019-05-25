@@ -1,0 +1,304 @@
+﻿
+<!DOCTYPE html>
+<head>
+<title>UA/NSTEMI-tratamiento</title>
+<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 	<link rel="stylesheet" href="cache/jquery.mobile-1.2.0.min.css"/>
+
+	<script type="text/javascript" src="cache/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="cache/jquery.mobile-1.2.0.min.js"></script>
+     <style type="text/css">#center{ text-align: center;} 
+
+</style>
+</head>
+<body>
+<div data-role="page" id="fibrinolisis"  data-theme="a">
+  <div data-role="header" data-theme="c">
+    <div align="center">Tratamiento <br>SCASEST</div>
+       <a href="#" data-rel="back" data-icon="back" data-iconpos="notext"  data-theme="c" class="ui-btn-left">Volver</a>
+       
+  </div>
+  <div data-role="content">
+  
+    <div data-role="collapsible-set" data-collapsed="true"  data-inset="true"><!--data-inset="false" para quitar margenes tabulador-->
+		
+        <div data-role="collapsible"  data-content-theme="d" >
+                
+	                   <h3>En todos los pacientes</h3>
+                        
+            <ul data-role="listview">
+                
+                <li><a href="#AAS" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Aspirina<span class="ui-li-count">IA</span></a></li>
+                <li><a href="#P2Y" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">P2Y<sub>12</sub>-Inh.receptor <span class="ui-li-count">IB</span></a></li>
+                <li><a href="#AC" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Anticoagulante<span class="ui-li-count">IA</span></a></li>
+
+            </ul>
+                        </div>
+                    
+                        
+                       <div data-role="collapsible"   data-content-theme="d">
+                        <h3>Si se realiza CCG</h3>
+                        <ul data-role="listview">
+                
+                <li><a href="#AAS2" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Aspirina<span class="ui-li-count">IB</span></a></li>
+                <li><a href="#P2Y2" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">P2Y<sub>12</sub>-Inh.receptor <span class="ui-li-count">IA</span></a></li>
+                <li><a href="#AC2" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Anticoagulante<span class="ui-li-count">IA</span></a></li>
+
+                <a href="#CCG" data-rel="popup" data-position-to="window" data-corners="false"data-role="button" data-theme="e" data-icon="info" >info</a>  </ul>
+                        </div>
+ <div data-role="collapsible"  data-content-theme="d" >
+                                  <h3>Si estrategia conservadora</h3>
+                        <ul data-role="listview">
+                
+                <li><a href="#AAS2" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Aspirina<span class="ui-li-count">IA</span></a></li>
+                <li><a href="#P2Y3" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">P2Y<sub>12</sub>-Inh.receptor <span class="ui-li-count">IB</span></a></li>
+                <li><a href="#AC3" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Anticoagulante<span class="ui-li-count">IA</span></a></li></ul></div>
+                                     
+ <div data-role="collapsible"  data-content-theme="d" >
+                                  <h3>Si CABG</h3>
+                        <ul data-role="listview">
+                
+                <li><a href="#AAS2" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Aspirina <span class="ui-li-count">IB</span></a></li>
+                <li><a href="#P2Y4" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">P2Y<sub>12</sub>-Inh.receptor</a></li>
+                <li><a href="#AC4" data-rel="popup"><img src="cache/images/pill.png" class="ui-li-icon">Anticoagulante</a></li></ul></div>
+                        
+                        
+                        
+                                    
+                                 <br>     
+                              
+                        <a href="Algoritmo.html" data-ajax="false" data-role="button" data-mini="false" data-corners="false" data-theme="b" data-icon="star" >Algoritmo tratamiento</a>
+                        <p align="center"><a href="#" data-rel="back" data-inline="true"data-role="button" data-mini="false"  data-theme="c" data-icon="back" >volver</a></p></div>
+                       
+                       
+                       
+                       <!--22530921y AASSSS -->
+
+<div data-role="popup" id="AAS" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<h1>Aspirina</h1>
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-mini="true" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+    <strong>Dosis de carga:</strong> 150-300 mg/vo.<br>
+    <strong>Mantenimiento</strong> indefinido 75-100 mg/dia<br>&nbsp;&nbsp;<small>81 mg si se adm. Ticagrelor o después de ATC <a href="IIaB.html" data-ajax="false">(IIaB)</a></small><br><strong>Alergia </strong> o intolerancia  GI a AAS: adm dosis de carga y de forma indefinida uno de los siguientes:<br>&#9642; Clopidogrel  <a href="IB.html" data-ajax="false">(IB)</a>
+                        <br>&#9642; Prasugrel (si se opta por estrategia invasiva precoz CCG) <a href="IB.html" data-ajax="false">(IC)</a><br>&#9642; Ticagrelor <a href="IB.html" data-ajax="false">(IC)</a>
+
+       <a href="#" data-rel="back" data-role="button" data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       
+       
+<div data-role="popup" id="AAS2" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+                
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-mini="true" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+        Continuar con la <strong>Aspirina </strong> <a href="IB.html" data-ajax="false">(IB)</a>
+
+       <a href="#" data-rel="back" data-role="button" data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       
+       
+       
+       <!--Antiplaquetas -->
+        <div data-role="popup" id="P2Y" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Inhibidor receptor<br>P2Y<sub>12</sub></div>
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+       
+  
+    <strong>Clopidogrel</strong> 300 mg dosis de carga,seguido de  75 mg/ dia.<strong>, o</strong><br>
+   <strong> Ticagrelor </strong>180 mg dosis de carga,seguido de 90 mg/12 h  en pacientes con riesgo alto-moderado de eventos isquémicos (ej.cTnI elavadas) <a href="IB.html" data-ajax="false">(IB)</a>
+</a>
+   
+
+       <a href="#" data-rel="back" data-role="button"  data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       
+       <!--Antiplaquetas 22222-->
+        <div data-role="popup" id="P2Y2" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Inhibidor receptor<br>P2Y<sub>12</sub></div>
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+ 
+                         Administrar dosis de carga si no se habia administrado  <a href="IA.html" data-ajax="false">(IA)</a><br>
+                        <strong> &#9633; Antes de la CCG:</strong> <br>
+                         &nbsp;&nbsp;&nbsp;Clopidogrel 600 mg. <a href="IB.html" data-ajax="false" >(IB)</a>, o Ticagrelor 180 mg.  <a href="IB.html" data-ajax="false">(IB)</a>,o ant GP IIb/IIIa  <a href="IA.html" data-ajax="false">(IA)</a>(de elección tirofiban o eptifibatide)
+                         
+                         
+                      <br><strong>&#9633; En el momento de la CCG:</strong><br>
+                       &nbsp;&nbsp;&nbsp;Clopidogrel  si no se ha administrado  <a href="IA.html" data-ajax="false">(IA) </a>, o Prasugrel 60 mg <a href="IB.html" data-ajax="false">(IB) </a>, o Ticagrelor  <a href="IB.html" data-ajax="false">(IB)</a>, o IV GP IIb/IIIa inh.  <a href="IA.html" data-ajax="false">(IA)</a><br>
+                       &#9633; Mantenimiento:<br>
+                       &nbsp;&nbsp;&nbsp;Clopidogrel 75 mg/dia, Ticagrelor 90 mg/12 h, Prasugrel 10 mg/dia, al menos durante un año <a href="IB.html" data-ajax="false">(IB) </a><br>Valorar beneficio/riesgo de sangrado de forma individualizada <a href="IC.html" data-ajax="false">(IC)</a></li>
+
+       <a href="#" data-rel="back" data-role="button"  data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+<!--antiagregantes en tto conservador -->
+
+<div data-role="popup" id="P2Y3" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Inhibidor receptor<br>P2Y<sub>12</sub></div>
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+       
+<strong>Añadir Clopidogrel o Ticagrelor</strong> (a la aspirina), tan pronto como sea posible, dosis de carga y de forma indefinida durante un año. <a href="IB.html" data-ajax="false">(IB)</a> <br>Realizar <strong>angiografia</strong> si presenta isquemia recurrente, fallo cardiaco, o arritmias graves <a href="IA.html" data-ajax="false">(IA)</a>, previa introducción de GP IIbIIIa inh. <a href="IA.html" data-ajax="false">(IA)</a>, clopidogrel o Ticagrelor (dosis de carga) <a href="IB.html" data-ajax="false">(IB)</a><br>
+Retirar GP IIb/IIIa si no se realiza angiografia <a href="IA.html" data-ajax="false">(IA)</a>
+   <a href="#" data-rel="back" data-role="button"  data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>   
+       
+       
+       
+       <div data-role="popup" id="P2Y4" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Inhibidor receptor<br>P2Y<sub>12</sub></div>
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+       
+<strong>Retirar P2Y<sub>12</sub> </strong><a href="IB.html" data-ajax="false">(IB)</a><br>&bull;
+5 días antes de CABG: Clopidogrel  <a href="IB.html" data-ajax="false">(IB)</a> y Ticagrelor <a href="IC.html" data-ajax="false">(IC)</a><br>&bull; Prasugrel 7 días antes <a href="IC.html" data-ajax="false">(IC)</a><br> &bull;Si precisa urgente <strong>CABG</strong> descontinuar al menos 24 h<a href="IB.html" data-ajax="false">(IB)</a>
+<br>
+<strong>Retirar GPI</strong> 2-4 horas antes de CABG (abciximab 12 h) <a href="IB.html" data-ajax="false">(IB)</a>
+   <a href="#" data-rel="back" data-role="button"  data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>   
+
+       
+       <!--Anticoagulantes-->
+        <div data-role="popup" id="AC" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Anticoagulantes</div>
+                
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+       
+  <strong>Enoxaparina</strong> <a href="IA.html" data-ajax="false">(IA)</a>: 
+  Bolo de 30 mg/iv seguido de 1 mg/kg sc. cada 12 h, máximo 8 días<br>
+ &#9642;  <small>ClCr <30 ml/min 1 mg/kg/24 h. SC. cada </small><br>
+  &#9642; <small>&gt; 75 años: 0,75 mg/kg/12 h. SC.<br></small>
+  <br><strong>Heparina NF</strong> <a href="IB.html" data-ajax="false">(IB)</a>: Bolo de 60 U/kg (máximo 4.000 U) seguido de infusión i.v. de 12 U/kg (máx. de 1.000 U/h) al menos 48 h, y seguir con una HBPM.<br>
+  &#9642;<small> Ajustar segun TTPA (x 2 valores referencia)  </small>
+    <br><br><strong>Fondaparinux</strong> <a href="IB.html" data-ajax="false">(IB)</a>: 2.5 mg/día sc., máximo 8 días<br>
+    &#9642;<small> Contraindicado si ClCr &lt; 30 ml/min </small>
+   
+
+       <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+        <!--Anticoagulantes-->
+        <div data-role="popup" id="AC2" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Anticoagulantes</div>
+                
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+       El tto. anticoagulante (previo) no deberia ser cambiado durante la ATC.<br>
+      
+       
+<strong>Enoxaparina </strong><a href="IA.html" data-ajax="false">(IA)</a><br>
+<small>Administrar bolo de 0.3 mg/kg i.v. si la ultima dosis sc se ha administrado > de 8 h.</small>
+
+<br>
+<strong>Heparina NF </strong> <a href="IB.html" data-ajax="false">(IB)</a>
+<small><br>&nbsp;&nbsp;&nbsp; Con IV GP IIb/IIIa : bolus 50-70 U/kg
+<br>&nbsp;&nbsp;&nbsp; NO IV GP IIb/IIIa : bolus 70-100 U/kg  </small>
+    
+    <br><strong>Fondaparinux</strong> <a href="IB.html" data-ajax="false">(IB)</a> añadiendo UFH antes de la ATC:
+    <br><small>&nbsp;&nbsp;&nbsp;85 U/kg (bolo) 
+    <br>&nbsp;&nbsp;&nbsp;60 U/kg si se usa GP IIb/IIIa.</small>
+     
+    <br><strong>Bivalidurin</strong> <a href="IB.html" data-ajax="false">(IB)</a>: si alto riesgo de sangrado. Puede asociarse o no HNF, pero no a IV GP IIb/IIIa <a href="IIaC.html" data-ajax="false">(IIaC)</a>
+   <small> <br>&nbsp;&nbsp;&nbsp 0.75 mg/kg bolus y 1.75 mg/kg/h en infusion.
+     <br>&nbsp;&nbsp;&nbsp si clcr < 30 ml/min 1 mg/kg/h</small>
+
+    <br><strong>Retirar tto anticoagulante después de ATC</strong> <a href="IB.html" data-ajax="false">(IB) </a>
+
+       <a href="#" data-rel="back" data-role="button" data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       
+       
+       <div data-role="popup" id="AC3" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Anticoagulantes</div>
+                
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+      <strong> Continuar con:</strong>
+      
+      Enoxaparina <a href="IA.html" data-ajax="false">(IA)</a> (8 días/alta) <strong>o </strong>
+      <br>Heparina NF <a href="IA.html" data-ajax="false">(IA)</a> (48 h) <strong>o</strong>
+      <br>Fondaparinux <a href="IB.html" data-ajax="false">(IB)</a> (8 días/alta) 
+       
+
+
+
+       <a href="#" data-rel="back" data-role="button" data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       
+              <div data-role="popup" id="AC4" data-theme="d" data-overlay-theme="a" style="max-width:100%">
+       <div data-role="header" data-theme="a" >
+				<div id="center">Anticoagulantes</div>
+                
+		</div>          
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+       
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+      <strong> Continuar con Heparina NF </strong><a href="IB.html" data-ajax="false">(IB)</a>
+
+<br><strong>Retirar </strong> y  sustituir por UFH segun practica:
+<br> &#9642;  Enoxaparin 12-24 h antes CABG  <a href="IB.html" data-ajax="false">(IB)</a>
+<br> &#9642;  Fondaparinux 24 h antes <a href="IB.html" data-ajax="false">(IB)</a>
+<br> &#9642;  Bivalirudina 3 h antes <a href="IB.html" data-ajax="false">(IB)</a>
+   
+
+       
+
+
+
+       <a href="#" data-rel="back" data-role="button" data-mini="true" data-theme="a" data-icon="delete" >Cerrar</a>
+       </div></div>
+       
+       <!--CCG -->
+<div data-role="popup" id="CCG" data-theme="d" data-overlay-theme="a" style="max-width:99%">
+        
+        <a href="#" data-rel="back" data-role="button" data-theme="e" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        
+       <div data-role="content" data-theme="e" class="ui-corner-bottom ui-content">
+<p>  <li class="ui-body ui-body-e"><small> No adm GP IIb/IIIa inh. si bivalirudin se ha seleccionado como  anticoagulante y que almenos 300 mg de clopidogrel se administraron en las 6 horas previa al CCG <a href="IIaC.html" data-ajax="false">(IIaC)</a><br>
+                       Prasugrel 60 mg. puede utilizarse antes de la angiografia si el riesgo de sangrado es bajo e improbable la indicación posterior de CABG <a href="IIbC.html" data-ajax="false">(IIbC)</a><br> GP IIb / IIIa se puede considerar en pacientes de *alto riesgo / sin riesgo de sangrado, que ya reciben aspirina y clopidogrel o ticagrelor  que se seleccionan para una estrategia invasiva.<a href="IIbB.html" data-ajax="false">(IIbB)</a>
+*[niveles elevados de troponina, diabetes o depresión importante del segmento ST]<br>
+Clopidogrel de 600 mg, seguida de 150 mg/día durante 6 días,y luego 75 mg/día puede ser
+razonable en pacientes que no se consideran de alto riesgo de sangrado <a href="IIbB.html" data-ajax="false">(IIbB)</a>
+                       
+                       </li><li class="ui-body ui-body-b">Pacientes con antecedentes de ACV/TIA que se planea CCG, No administra prasugrel es perjudicial. <a href="IIIA.html" data-ajax="false">(IIIA)</a></li></div>
+                      
+       </div></div>
+       
+       
+
+       
+       
+
+       
+</body>
+</html>
